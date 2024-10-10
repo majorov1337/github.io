@@ -44,7 +44,7 @@ ssh root@123.123.123.123
 
 Вместо 123.123.123.123 - айпи нашего купленного сервера
 
-![](HTML%20import/Attachments/image(3).png)
+![](https://i.imgur.com/vt5yGyO.png)
 
 Вписываем yes
 
@@ -87,13 +87,13 @@ docker cp public.key x-ui:public.key
 
 Логин и пароль- admin
 
-![](HTML%20import/Attachments/image(4).png)
+![](https://i.imgur.com/YCOYUJZ.png)
 
 Логинимся
 
 Идем в http://IP_SERV:54321/xui/settings
 
-![](HTML%20import/Attachments/image(5).png)
+![](https://i.imgur.com/gjWJOfk.png)
 
 **- Panel Certificate** **Public** Key Path :
 
@@ -109,11 +109,11 @@ docker cp public.key x-ui:public.key
 
 Жмакаем Save -> Restart Panel
 
-![](HTML%20import/Attachments/image(6).png)
+![](https://i.imgur.com/2e5mF9A.png)
 
 Заходим по http://IP_SERV:PORT/URI_Path/xui/settings -> Authentication и создаем нового юзера
 
-![](HTML%20import/Attachments/image(7).png)
+![](https://i.imgur.com/IZow3I5.png)
 
 Нажимаем конфирм и заходим уже под новым юзером
 
@@ -121,33 +121,33 @@ docker cp public.key x-ui:public.key
 
 Дальше переходим в http://IP_SERV:PORT/URI_Path/xui/xray и врубаем **Routes traffic to Google via IPv4**
 
-![](HTML%20import/Attachments/image(8).png)
+![](https://i.imgur.com/IacvzQL.png)
 
 Наконец идем в http://IP_SERV:PORT/URI_Path/xui/inbounds
 
 Жмакаем **Add inbound**
 
-**Remark** - похуй что писать -> **Protocol** - vless -> **Listen IP** - Айпи нашего сервера/можно оставить пустыстым -> **Port** - 443 Client -> **Email** -> похуй, рандом(или YA_PC) ![](./Варим%20борщ%20правильно%20_%20how-to-varit-borsch_files/image(9))
+**Remark** - похуй что писать -> **Protocol** - vless -> **Listen IP** - Айпи нашего сервера/можно оставить пустыстым -> **Port** - 443 Client -> **Email** -> похуй, рандом(или YA_PC) ![](https://i.imgur.com/XnP8MKE.png)
 
-![](HTML%20import/Attachments/image(10).png)
+![](https://i.imgur.com/0hD0jKA.png)
 
 **Transmission** - TCP -> **Security** - REALITY -> **uTLS** - chrome -> **Dest** - google.com:443 -> **SNI** - google.com,www.google.com -> Get New Cert -> Create
 
-![](HTML%20import/Attachments/image(11).png)
+![](https://i.imgur.com/BwxZHGV.png)
 
 Когда мы генерили Email/вводили свое название - мы создавали клиента
 
 Раскрываем "клиентов"
 
-![](HTML%20import/Attachments/image(12).png)
+![](https://i.imgur.com/SRg5JkW.png)
 
 Жмакаем Edit Client
 
-![](HTML%20import/Attachments/image(13).png)
+![](https://i.imgur.com/Ym3osAZ.png)
 
 Flow - **xtls-rprx-vision ->** жмакаем **Save Changes**
 
-![](HTML%20import/Attachments/image(14).png)
+![](https://i.imgur.com/2GsHkJz.png)
 
 1 **клиент - 1 устройство**
 
@@ -155,11 +155,11 @@ Flow - **xtls-rprx-vision ->** жмакаем **Save Changes**
 
 Чтобы не запутаться в клиентах - в поле **Email** при добавлении клиента как-то обозначайте эти устройства
 
-![](HTML%20import/Attachments/image(15).png)
+![](https://i.imgur.com/Uiota00.png)
 
 **Например у меня это выглядит так**
 
-![](HTML%20import/Attachments/image(16).png)
+![](https://i.imgur.com/2yCsDur.gif)
 
 **ВИДЕВАГАЙД**
 
@@ -169,7 +169,7 @@ Flow - **xtls-rprx-vision ->** жмакаем **Save Changes**
 
 Соре, 4 утра
 
-![](HTML%20import/Attachments/image(17).png)
+![](https://i.imgur.com/S0LNhTS.png)
 
 Ну так вот, мы добавили клиента, че дальше делать?
 
@@ -179,53 +179,45 @@ Flow - **xtls-rprx-vision ->** жмакаем **Save Changes**
 
 Для [IOS](https://apps.apple.com/us/app/streisand/id6450534064?platform=iphone)
 
-Создали клиента в панели-> копируем ключ Либо через QR-код ![](HTML%20import/Attachments/image(18).png) Либо через More information ![](HTML%20import/Attachments/image(19).png)
+Создали клиента в панели-> копируем ключ Либо через QR-код ![](https://i.imgur.com/BTZeyvt.jpeg) Либо через More information ![](https://i.imgur.com/PLhJSkY.jpeg)
 
 ## 
 
-[](https://kekwaaait.gitbook.io/how-to-varit-borsch#nastroika-dlya-pk)
-
 **Настройка для ПК**
 
-Копируем ключ -> пкм по окну софта и "Добавить профиль из буфера обмена" ![](HTML%20import/Attachments/image(20).png)
+Копируем ключ -> пкм по окну софта и "Добавить профиль из буфера обмена" ![](https://i.imgur.com/Ub3LYBy.jpeg)
 
-Дальше тыкаем на Режим системного прокси и Режим TUN ![](./Варим%20борщ%20правильно%20_%20how-to-varit-borsch_files/image(21))
+Дальше тыкаем на Режим системного прокси и Режим TUN ![](https://i.imgur.com/HQkWzbm.png)
 
 Идем проверять наш айпи https://2ip.ru/ Если все сменено - все, чиллим
 
 ## 
 
-[](https://kekwaaait.gitbook.io/how-to-varit-borsch#nastroika-na-ios)
-
 **Настройка на IOS**
 
 **(я точно не уверен, не богатый)**
 
-Заходим в Streisand и импортируем конфигурацию или как-то так это называется ![](HTML%20import/Attachments/image(22).png)
+Заходим в Streisand и импортируем конфигурацию или как-то так это называется ![](https://i.imgur.com/m0Yzjhs.jpeg)
 
 ## 
-
-[](https://kekwaaait.gitbook.io/how-to-varit-borsch#nastroika-dlya-android)
 
 **Настройка для Android**
 
-Копируем ключ -> ![](HTML%20import/Attachments/image(23).png) ![](HTML%20import/Attachments/image(24).png)
+Копируем ключ -> ![](https://i.imgur.com/eHgutnN.jpeg) ![](https://i.imgur.com/GtNqUni.jpeg)
 
-ЖМЕМ на наш профиль и летим ![](HTML%20import/Attachments/image(25).png)
+ЖМЕМ на наш профиль и летим ![](https://i.imgur.com/Ae8VAGk.jpeg)
 
 ## 
 
-[](https://kekwaaait.gitbook.io/how-to-varit-borsch#kak-nastroit-tolko-dlya-diskorda-i-yutuba)
-
 **Как настроить ТОЛЬКО для дискорда и ютуба?**
 
-![](HTML%20import/Attachments/image(26).png)
+![](https://i.imgur.com/4V7OvJY.png)
 
-![](HTML%20import/Attachments/image(27).png)
+![](https://i.imgur.com/BaAxLfF.png)
 
-![](HTML%20import/Attachments/image(28).png)
+![](https://i.imgur.com/AVrczTZ.png)
 
-![](HTML%20import/Attachments/image(29).png)
+![](https://i.imgur.com/0wKpNXU.png)
 
 Домены, которые вписывать
 
@@ -260,41 +252,31 @@ domain:wide-youtube.l.google.com
 
 ## 
 
-[](https://kekwaaait.gitbook.io/how-to-varit-borsch#a-kak-zapustit-a-kak-otklyuchit-a-kak-dobavit-v-avtozagruzku)
-
 А как запустить? А как отключить? А как добавить в автозагрузку?
 
 ### 
 
-[](https://kekwaaait.gitbook.io/how-to-varit-borsch#avtozapusk-s-vklyuchennym-maionezom)
-
 Автозапуск с включенным прокси
 
-![](HTML%20import/Attachments/image(30).png)
+![](https://i.imgur.com/gU8ZO5N.png)
 
 ## 
-
-[](https://kekwaaait.gitbook.io/how-to-varit-borsch#kak-otklyuchit)
 
 Как отключить?
 
 Убрать галочки с режимов
 
-![](./Варим%20борщ%20правильно%20_%20how-to-varit-borsch_files/image(31))
+![](https://i.imgur.com/wDrUnzw.png)
 
 ### 
 
-[](https://kekwaaait.gitbook.io/how-to-varit-borsch#kak-vklyuchit)
-
 Как включить?
 
-![](HTML%20import/Attachments/image(32).png)
+![](https://i.imgur.com/PazGIyT.png)
 
-![](HTML%20import/Attachments/image(33).png)
+![](https://i.imgur.com/wyRuynt.png)
 
 ## 
-
-[](https://kekwaaait.gitbook.io/how-to-varit-borsch#khotim-glubzhe)
 
 Хотим глубже?
 
@@ -314,15 +296,11 @@ domain:wide-youtube.l.google.com
 
 ## 
 
-[](https://kekwaaait.gitbook.io/how-to-varit-borsch#besplatnye-sposoby)
-
 **Бесплатные способы**
 
 ЭТО БЕСПЛАТНЫЙ СПОСОБ = НЕ ГАРАНТИРОВАННО, ЧТО ОНО БУДЕТ РАБОТАТЬ И НАСКОЛЬКО ДОЛГО
 
 ## 
-
-[](https://kekwaaait.gitbook.io/how-to-varit-borsch#amneziawg--warp)
 
 AmneziaWG + WARP
 
@@ -356,19 +334,17 @@ curl -sSL https://raw.githubusercontent.com/ImMALWARE/bash-warp-generator/main/w
 
 После того как скачали конфиг идем в софт (НА ВСЕХ УСТРОЙСТВАХ +- ОД~~НОХ~~ИНАКОВО)
 
-![](HTML%20import/Attachments/image(34).png)
+![](https://i.imgur.com/TIdrVL0.png)
 
-![](HTML%20import/Attachments/image(35).png)
+![](https://i.imgur.com/yadk6yB.png)
 
-Подключаемся ![](./Варим%20борщ%20правильно%20_%20how-to-varit-borsch_files/image(36))
+Подключаемся ![](https://i.imgur.com/m06icJT.png)
 
 Дурка снова стабильна
 
-![](HTML%20import/Attachments/image(37).png)
+![](https://i.imgur.com/pE0RR5C.png)
 
 ### 
-
-[](https://kekwaaait.gitbook.io/how-to-varit-borsch#ispolzuem-zapret-discord-youtube)
 
 Используем zapret-discord-youtube
 
